@@ -7,7 +7,7 @@ function Create() {
     name: "",
     username: "",
     email: "",
-    address: {No:"", street: "", city: "", zipcode: "" },
+    address: {No: "", street: "", city: "", zipcode: "" },
     phone: "",
     website: "",
     company: { companyName: "", role: "", details: "" },
