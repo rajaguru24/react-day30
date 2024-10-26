@@ -89,7 +89,7 @@ function Create() {
                       address:{
                         ...inputData.address,
                         No: e.target.value,
-                      }
+                      },
                     })
                   }
                 ></input>
