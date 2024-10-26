@@ -60,14 +60,14 @@ function Home() {
                     {data?.address?.No}{data?.address?.street} 
                     {data?.address?.city}
                   </p>
-                  <p>Zipcode : {data?.address?.zipcode}</p>
+                  <p> {data?.address?.zipcode}</p>
                 </td>
                 <td className="text-center">{data.phone}</td>
                 <td className="text-center">{data.website}</td>
                 <td>
-                  <p>Name: {data?.company?.name}</p>
-                  <p>Role: {data?.company?.catchPhrase}</p>
-                  <p>Details: {data?.company?.bs}</p>
+                  <p> {data?.company?.name}</p>
+                  <p> {data?.company?.catchPhrase}</p>
+                  <p> {data?.company?.bs}</p>
                 </td>
 
                 <td className="text-center">
