@@ -6,6 +6,22 @@ function Home() {
   const [columns, setColumns] = useState([]);
   const [records, setRecords] = useState([]);
 
+  function handleDelete(id) {
+    const conf = window.confirm("Do you want to delete the record ?");
+
+    if (conf) {
+      axios
+        .delete("https://65f1213ada8c6584131cea32.mockapi.io/users/" + id)
+        .then((res) => {
+          alert("Record deleted successfully");
+          handleInput();
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  }
+
   useEffect(() => {
     handleInput();
   }, []);
@@ -91,22 +107,6 @@ function Home() {
       </div>
     </div>
   );
-
-  function handleDelete(id) {
-    const conf = window.confirm("Do you want to delete the record ?");
-
-    if (conf) {
-      axios
-        .delete("https://65f1213ada8c6584131cea32.mockapi.io/users/" + id)
-        .then((res) => {
-          alert("Record deleted successfully");
-          handleInput();
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    }
-  }
 }
 
 export default Home;

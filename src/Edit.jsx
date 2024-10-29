@@ -44,7 +44,7 @@ function Edit() {
                   type="text"
                   className="form-control"
                   disabled
-                  value={data.id}
+                  value={id}
                 ></input>
               </div>
               <br></br>
